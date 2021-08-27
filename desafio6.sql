@@ -23,5 +23,5 @@ ON history.DEPARTMENT_ID = department.DEPARTMENT_ID
 ) AS history_department
 ON jobs.JOB_ID = history_department.JOB_ID
 ) AS job_history_department
-ON job_history_department.JOB_ID = employees.JOB_ID
+ON job_history_department.EMPLOYEE_ID = employees.EMPLOYEE_ID
 ORDER BY `Nome completo` ASC, Cargo ASC;
