@@ -8,6 +8,7 @@ SELECT Country,
 COUNT(Country) - 1 AS 'Número de compatriotas'
 FROM w3schools.customers
 GROUP BY Country
+HAVING `Número de compatriotas` > 0
 ) AS country
 ON country.Country = customers.Country
 ORDER BY Nome ASC;
