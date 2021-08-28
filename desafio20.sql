@@ -12,6 +12,8 @@ INNER JOIN jobs
 ON jobs.JOB_ID = job_history.JOB_ID
 INNER JOIN departments
 ON job_history.DEPARTMENT_ID = departments.DEPARTMENT_ID
+WHERE employees.EMAIL = email
 ORDER BY Departamento ASC, Cargo ASC;
+
 END $$
 DELIMITER ;
